@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editing Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Toolbar -->
+        <header class="toolbar">
+            <button class="tool">Crop</button>
+            <button class="tool">Rotate</button>
+            <button class="tool">Flip</button>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Left Sidebar with Selectable Buttons -->
+            <aside class="left-sidebar">
+                <button class="sidebar-btn active">
+                    <img src="icon-crop.png" alt="Crop" />
+                </button>
+                <button class="sidebar-btn">
+                    <img src="icon-rotate.png" alt="Rotate" />
+                </button>
+                <button class="sidebar-btn">
+                    <img src="icon-flip.png" alt="Flip" />
+                </button>
+                <button class="sidebar-btn">
+                    <img src="icon-adjust.png" alt="Adjust" />
+                </button>
+                <button class="sidebar-btn">
+                    <img src="icon-filter.png" alt="Filter" />
+                </button>
+            </aside>
+
+            <!-- Central Image Preview Area -->
+            <div class="image-editor">
+                <div class="image-preview">
+                    <img src="your-image.jpg" alt="Editing Image">
+                </div>
+            </div>
+
+            <!-- Right Sidebar for Multiple Parameter Sections -->
+            <aside class="right-sidebar">
+                <div class="settings-section">
+                    <h3>Brightness</h3>
+                    <div class="setting-item">
+                        <input type="range" id="brightness" min="0" max="100" value="50">
+                    </div>
+                    <div class="setting-buttons">
+                        <button class="apply-btn">Apply</button>
+                        <button class="reset-btn">Reset</button>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3>Contrast</h3>
+                    <div class="setting-item">
+                        <input type="range" id="contrast" min="0" max="100" value="50">
+                    </div>
+                    <div class="setting-buttons">
+                        <button class="apply-btn">Apply</button>
+                        <button class="reset-btn">Reset</button>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3>Saturation</h3>
+                    <div class="setting-item">
+                        <input type="range" id="saturation" min="0" max="100" value="50">
+                    </div>
+                    <div class="setting-buttons">
+                        <button class="apply-btn">Apply</button>
+                        <button class="reset-btn">Reset</button>
+                    </div>
+                </div>
+
+                <!-- Add more sections as needed -->
+            </aside>
+        </div>
+
+        <!-- Bottom Thumbnail Bar -->
+        <footer class="thumbnail-bar">
+            <img src="thumb1.jpg" alt="Thumbnail 1" class="thumbnail">
+            <img src="thumb2.jpg" alt="Thumbnail 2" class="thumbnail">
+            <img src="thumb3.jpg" alt="Thumbnail 3" class="thumbnail">
+        </footer>
+    </div>
+</body>
+</html>
